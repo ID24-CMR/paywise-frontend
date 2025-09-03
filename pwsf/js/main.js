@@ -41,7 +41,7 @@ async function loadData() {
 		`;
 		table.appendChild(row);
 		}
-		catch (error) {
+		catch(error) {
 			console.error("Error laoding JSON", error);
 		}
 	}
