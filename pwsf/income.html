@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<title>income</title>
+</head>
+<body>
+<form name="income" onsubmit="return validateForm()">
+	<h2>Income Form</h2>
+	<label for="month">Month</label>
+	<select id="month" name="month">
+		<option value="">-- Select Month --</option>
+		<option>January</option>
+		<option>Ferbuary</option>
+		<option>March</option>
+		<option>April</option>
+		<option>May</option>
+		<option>June</option>
+		<option>July</option>
+		<option>August</option>
+		<option>September</option>
+		<option>October</option>
+		<option>November</option>
+		<option>December</option>
+	</select>
+	<label for="salary">Salary:</label>
+	<input type="number" name="salary" id="salary" placeholder="salary">
+
+	<label for="year">Year:</label>
+	<input type="number" id="year" name="year" placeholder="year">
+
+	<div class="error" id="error-msg"></div>
+
+	<div class="buttons">
+		<input type="submit" value="Submit" class="submit-btn">
+		<input type="reset" value="Reset" class="reset-btn">
+	</div>
+</form>
+
+<script src="js/main.js"></script>
+</body>
+</html>

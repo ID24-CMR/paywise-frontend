@@ -78,3 +78,82 @@ table tr:nth-child(even) {
 table tr:hover {
 	background: #e0e0e0;
 }
+
+/*****   income csss ***********/
+
+form {
+	background-color: #ffffff;
+	padding: 20px;
+	border-radius: 8px;
+	max-width:400px;
+	margin: auto;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+form h2 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+label {
+	display: block;
+	margin-top: 10px;
+}
+
+select, 
+input[type="number"] {
+	width: 100%;
+	padding: 10px;
+	margin-top: 5px ;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+.buttons {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+.buttons input {
+	width: 48%;
+	padding: 10px;
+	border-radius: 4px;
+	border: none;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.submit-btn {
+	background-color: #4CAF50;
+	color: white;
+}
+
+.submit-btn:hover {
+	background-color: #45a049;
+}
+
+.reset-btn {
+	background-color: #ccc;
+}
+
+.reset-btn:hover {
+	background-color: #bbb;
+}
+
+.error {
+	color: red;
+	font-size: 0.9em;
+	margin-top: 10px;
+}
+
+@media (max-width: 500px){
+	form {
+		width: 100%;
+		padding: 15px;
+	}
+	.button input {
+		font-size: 14px;
+		padding: 8px;
+	}
+}

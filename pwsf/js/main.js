@@ -49,3 +49,31 @@ async function loadData() {
 
 // run when the page loads
 document.getElementById("DOMContentLoaded", loadData);
+
+
+function validateForm() {
+	const month = document.forms["income"]["month"].value;
+	const month = document.forms["income"]["salary"].value;
+	const month = document.forms["income"]["year"].value;
+	const errorMsg = document.getElementById("error-msg");
+
+	if (!month || !salary || !year) {
+		errorMsg.textContent = "All fiels are required.";
+		return false;
+	}
+
+	if (isNaN(salary) || isNaN(year)) {
+		errorMsg.textContent = "Salary and Year must be numbers.";
+		return false;
+	}
+
+	if (year < 1900 || year > 2100) {
+		errorMsg.textContent = "Year must be between 1900 and 2100";
+		return false
+	}
+
+	errorMsg.textContent = "";
+
+	windows.location.href = "dashboard.html";
+	return false;
+}
